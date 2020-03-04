@@ -1,0 +1,56 @@
+{
+  "name": "kaosjs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Vuejs renderless lib",
+  "author": {
+    "name": "Vincent Dhennin"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve ./playground/src/index.ts",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name kaosjs ./dist/kaosjs.common.js",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-typescript": "~4.2.0",
+    "@vue/cli-plugin-unit-jest": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.1",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "tailwindcss": "1.2.0",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1",
+    "typescript": "~3.7.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "_id": "kaosjs@0.0.0",
+  "bugs": {
+    "url": "https://github.com/Kawacrepe/Kaosjs/issues"
+  },
+  "homepage": "https://github.com/Kawacrepe/Kaosjs#readme",
+  "keywords": [
+    "vue",
+    "renderless",
+    "components"
+  ],
+  "license": "MIT",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kawacrepe/Kaosjs.git"
+  }
+}
