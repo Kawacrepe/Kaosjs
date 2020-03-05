@@ -1,6 +1,6 @@
 <template>
     <div id="#app" class="w-full">
-        <div class="max-w-4xl p-4 mx-auto my-64" style="height: 400px;">
+        <div class="max-w-4xl p-4 mx-auto my-64">
             <div class="p-6 bg-gray-800 rounded shadow-xl">
                 <h1>
                     Playground Components
