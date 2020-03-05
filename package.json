@@ -11,7 +11,8 @@
     "build": "vue-cli-service build --target lib --name kaosjs src/index.ts",
     "lint": "vue-cli-service lint"
   },
-  "main": "src/index.ts",
+  "main": "dist/kaosjs.umd.js",
+  "module": "dist/kaosjs.common.js",
   "dependencies": {
     "tailwindcss": "^1.2.0",
     "vue": "^2.6.11"

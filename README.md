@@ -1,29 +1,40 @@
-# kaosjs
+# Kaosjs
 
-## Project setup
-```
-yarn install
-```
+Kaosjs is a [renderless](https://adamwathan.me/renderless-components-in-vuejs/) Vue component library. It only brings functionality to Vue, without styling.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+> `!` This library is not ready for production.
 
-### Compiles and minifies for production
-```
-yarn build
+# Installation
+
+Install the `kaosjs` library with your package manager:
+
+```console
+$ yarn add kaosjs
 ```
 
-### Run your unit tests
-```
-yarn test:unit
+Register it as a Vue plugin:
+
+```js
+// main.js
+import Vue from 'vue';
+import App from './App.vue';
+import Alcalin from 'alcalin';
+
+Vue.config.productionTip = false;
+Vue.use(Alcalin);
+
+new Vue({
+  render: h => h(App),
+}).$mount('#app');
 ```
 
-### Lints and fixes files
-```
-yarn lint
-```
+# TO-DO
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Observer
+- ListView
+- TreeView
+- Select
+- Tags Input
+- Tabs
+- Storage
+- Pagination
