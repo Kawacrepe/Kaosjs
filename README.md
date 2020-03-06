@@ -18,10 +18,10 @@ Register it as a Vue plugin:
 // main.js
 import Vue from 'vue';
 import App from './App.vue';
-import Alcalin from 'alcalin';
+import Kaosjs from 'kaosjs';
 
 Vue.config.productionTip = false;
-Vue.use(Alcalin);
+Vue.use(Kaosjs);
 
 new Vue({
   render: h => h(App),
