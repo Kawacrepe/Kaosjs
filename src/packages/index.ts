@@ -1,2 +1,2 @@
-export { Toggle } from './elements/Toggle';
-export { Observer } from './elements/Observer';
+export { Toggle } from './components/Toggle';
+export { Observer } from './components/Observer';
