@@ -30,9 +30,7 @@ new Vue({
 
 # TO-DO
 
-- ListView
 - TreeView
-- Select
 - Tags Input
 - Tabs
 - Storage
