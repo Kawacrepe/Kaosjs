@@ -5,7 +5,7 @@
       ref="trigger"
       @mouseenter="hoverMode ? on() : undefined"
       @mouseleave="hoverMode ? off() : undefined"
-      @click="clickMode ? toggle() : undefined"
+      @click="toggle()"
       v-text="text"
     />
 
@@ -34,9 +34,6 @@ export default Vue.extend({
     computed: {
         hoverMode() {
             return 'hover' === this.trigger;
-        },
-        clickMode() {
-            return 'click' === this.trigger;
         },
     },
 })
