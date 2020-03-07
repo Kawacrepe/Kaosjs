@@ -30,7 +30,6 @@ new Vue({
 
 # TO-DO
 
-- Observer
 - ListView
 - TreeView
 - Select
