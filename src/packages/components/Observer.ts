@@ -116,6 +116,7 @@ const data = Vue.extend({
             });
         },
         destroyObserver() {
+            
             if(this.observer) {
                 this.observer.disconnect();
                 this.observer = null;
