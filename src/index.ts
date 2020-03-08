@@ -1,5 +1,5 @@
 import { VueConstructor } from 'vue/types/umd';
-import * as components from '@/packages';
+import * as components from './packages/index';
 
 const kaos = {
   install(Vue: VueConstructor) {

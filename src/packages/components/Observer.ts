@@ -3,8 +3,8 @@ import { wrapOptions, wrapSlot } from "../mixins/slot-wrapper";
 
 const data = Vue.extend({
     data: () => ({
-        observer: (null as unknown) as IntersectionObserver | null,
-        entry: (null as unknown) as IntersectionObserverEntry | null,
+        observer: (null as unknown) as IntersectionObserver | any,
+        entry: (null as unknown) as IntersectionObserverEntry | any,
         visible: false,   
     }),
     props: {
@@ -71,6 +71,7 @@ const data = Vue.extend({
 
     methods: {
         createObserver() {
+            
             if(this.observer) this.destroyObserver();
 
             this.observer = new IntersectionObserver(
@@ -78,11 +79,14 @@ const data = Vue.extend({
                     this.entry = entries[0];
                     
                     if(entries.length > 1) {
-                        this.entry = this.entry ?? entries.find(e => e.isIntersecting);
-                    }
 
-                    this.visible = this.entry?.isIntersecting && this.entry.intersectionRatio
-                        >= this.threshold;
+                        if(!this.entry) {
+                            this.entry = entries.find(e => e.isIntersecting);
+                        }
+                    }
+                    
+                    this.visible = (this.entry == null ? undefined : this.entry.isIntersecting) 
+                        && this.entry.intersectionRatio >= this.threshold;
                     
                     const payload = { entry: this.entry, element: this.entry.target };
 

@@ -3,8 +3,8 @@ import {
   updateListeners,
   hasClickedAway,
   UIListener,
-} from '@/packages/mixins/click-away';
-import { wrapSlot, wrapOptions } from '@/packages/mixins/slot-wrapper';
+} from '../mixins/click-away';
+import { wrapSlot, wrapOptions } from '../mixins/slot-wrapper';
 
 const data = Vue.extend({
   data: () => ({
